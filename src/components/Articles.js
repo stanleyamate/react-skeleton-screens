@@ -24,7 +24,7 @@ const Articles = () => {
           <p>{article.body}</p>
       </div><br />
       </>
-      )):([1,2,3,4,5].map(n=><SkeletonArticle key={n}/>))
+      )):([1,2,3,4,5].map(n=><SkeletonArticle theme="dark" key={n}/>))
 
      }
     </div>

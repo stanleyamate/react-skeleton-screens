@@ -11,7 +11,6 @@
 .skeleton.title{
     width: 50%;
     height: 20px;
-    
 }
 .skeleton.avatar{
     width: 100px;
@@ -27,6 +26,7 @@
     margin: 20px auto;
     padding: 10px 15px;
     width: 100%;
+    border-radius: 8px;
 }
 .skeleton-article{
    display: flex;
@@ -40,4 +40,14 @@
 }
 .skeleton-Profile > div:last-child div{
    margin: 15px 0;
+}
+/* themes*/
+.skeleton-wrapper.light{
+    background: #eeeeee;
+}
+.skeleton-wrapper.dark{
+    background: #444;
+}
+.skeleton-wrapper.dark .skeleton{
+    background: #777;
 }

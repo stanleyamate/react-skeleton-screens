@@ -1,10 +1,10 @@
 import React from 'react'
 import SkeletonElement from './SkeletonElement'
 
-const SkeletonProfile = () => {
-    
+const SkeletonProfile = ({theme}) => {
+    const selectedTheme= theme || "light";
   return (
-    <div className="skeleton-wrapper">
+    <div className={`skeleton-wrapper ${selectedTheme}`}>
         <div className="skeleton-Profile">
           <div>
             <SkeletonElement type="avatar"/>
@@ -14,7 +14,6 @@ const SkeletonProfile = () => {
             <SkeletonElement type="text"/>
             <SkeletonElement type="text"/>
           </div>
-
         </div>
     </div>
   )

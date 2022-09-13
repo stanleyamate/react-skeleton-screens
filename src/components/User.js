@@ -29,7 +29,7 @@ const User = () => {
            </div>
             
           </>)
-          :([1].map(n=><SkeletonProfile key={n}/>))
+          :([1].map(n=><SkeletonProfile theme="dark" key={n}/>))
          
          }
       </div>
