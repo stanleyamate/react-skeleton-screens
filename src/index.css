@@ -31,30 +31,35 @@ header{
    grid-template-columns: 1fr;
    gap: 1em;
    padding: 1em;
-}
-.wrapper > div{
-  background: #c2eced;
+  }
+  .wrapper > div{
   border-radius: 8px;
   min-height: 100px;
   padding: 1em;
 }
 .user{
   height: 300px;
-}
-.wrapper div:first-child{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding-left: 2em !important;
+  gap: 1em;
+
 }
-.wrapper div:first-child > div{
+.user .user-top{
   display: flex;
   align-items: center;
-  gap:1em;
+  gap: 1em;
 }
+.user-bottom{
+ font-size: 1.8rem;
+}
+
 .image-user{
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
   background: #b5b5b5;
   border-radius: 50%;
 }
@@ -62,8 +67,4 @@ header{
   .wrapper{
     grid-template-columns: 1fr 3fr;
  } 
-}
-.wrapper div:first-child{
-  justify-content: center;
-  gap:1em;
 }

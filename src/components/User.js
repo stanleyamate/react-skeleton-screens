@@ -1,4 +1,5 @@
 import React,{ useState, useEffect } from 'react'
+import SkeletonProfile from './skeletons/SkeletonProfile';
 
 const User = () => {
   const [person, setPerson] = useState(null)
@@ -15,18 +16,20 @@ const User = () => {
   return ( 
     <>
       <div className='user'>
-        <h1>user deatils</h1>
          {
           person ?(
           <> 
-           <div>
+           <div className='user-top'>
               <div className='image-user'></div>
               <h3>{person.name}</h3> 
            </div>
-            <h5>{person.email}</h5>
-            <p>{person.phone}</p>
+           <div className="user-bottom">
+               <h5>{person.email}</h5>
+               <p>{person.phone}</p>
+           </div>
+            
           </>)
-          :<div>Loading...</div>
+          :([1].map(n=><SkeletonProfile key={n}/>))
          
          }
       </div>
